@@ -10,7 +10,9 @@ html(lang='en')
         meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
         link(rel='stylesheet', href='./css/reveal.css')
         link#theme(rel='stylesheet', href='./css/theme/black.css')
+        link#theme(rel='stylesheet', href='./css/style.css')
         link(rel='stylesheet', href='lib/css/zenburn.css')
+        link(href='/manifest.json', rel='manifest')
         //if lt IE 9
             script(src='lib/js/html5shiv.js')
     body
@@ -34,3 +36,15 @@ html(lang='en')
                     { src: './plugin/notes/notes.js', async: true }
                 ]
             });
+            
+            /*if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('/service-worker.js').then(function () {
+                    console.log('%cSERVICE WORKER: installation complete.', 'color: #1b5e20');
+                }, function () {
+                    console.error('SERVICE WORKER: installation failed.');
+                });
+            } else {
+                console.error('SERVICE WORKER: the browser does not have service workers.');
+            }*/
+
+
