@@ -1,13 +1,13 @@
 section
     section(data-background='./img/wow.gif')
-        h1 Wait did you just say OFFLINE?!
+        h1 Wait... Did you just say OFFLINE?!
     section
         h2 OFFLINE MODE
         span.fragment
             p Web apps that can work without an Internet Connection.
             p Thanks to service workers.
         span.fragment
-            p Adding this to your main HTML for installing.
+            p Adding this code to your main HTML for installing.
             pre
                 code.hljs(data-trim)
                     |if ('serviceWorker' in navigator) {
@@ -21,17 +21,11 @@ section
                     |}
     section
         h2 service-worker.js
-        pre
-            code.hljs(data-trim)
-                |if ('serviceWorker' in navigator) {
-                |   navigator.serviceWorker.register('/service-worker.js')
-                |       .then(function(registration) {
-                |           console.log('Registration successful, scope is:', registration.scope);
-                |       })
-                |   .catch(function(error) {
-                |       console.log('Service worker registration failed, error:', error);
-                |   });
-                |}
+        span.fragment
+            p Is a script that your browser runs in the background, separate from a web page.
+        span.fragment
+            p Supported by Chrome, Firefox and Opera. Edge and Safari are still on plans.
+    section(data-background='./img/sw-lifecycle.png', data-background-size='40%')
 
 
         
