@@ -20,7 +20,7 @@ What things you need to install the software and how to install them.
 
 * Install [NodeJS](https://nodejs.org)
 
-That's all! ðŸ¤·ðŸ»
+That's all! :D
 
 ### Installing
 
@@ -48,7 +48,7 @@ npm start
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](/blob/master/LICENSE.md) file for details
 
 ## Acknowledgments
 
