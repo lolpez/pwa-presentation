@@ -1,0 +1,36 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        title Teamwork Presentation by Lolpez
+        meta(name='description', content='A framework for easily creating beautiful presentations using HTML')
+        meta(name='author', content='Hakim El Hattab')
+        meta(name='apple-mobile-web-app-capable', content='yes')
+        meta(name='apple-mobile-web-app-status-bar-style', content='black-translucent')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+        link(rel='stylesheet', href='./css/reveal.css')
+        link#theme(rel='stylesheet', href='./css/theme/black.css')
+        link(rel='stylesheet', href='lib/css/zenburn.css')
+        //if lt IE 9
+            script(src='lib/js/html5shiv.js')
+    body
+        block content
+        script(src='./lib/js/head.min.js')
+        script(src='./js/reveal.js')
+        script.
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+                transition: 'zoom', // none/fade/slide/convex/concave/zoom
+                dependencies: [
+                    { src: './lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: './plugin/search/search.js', async: true },
+                    { src: './plugin/zoom-js/zoom.js', async: true },
+                    { src: './plugin/notes/notes.js', async: true }
+                ]
+            });
